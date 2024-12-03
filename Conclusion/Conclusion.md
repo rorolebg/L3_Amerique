@@ -1,1 +1,2 @@
-
+L'étude de ce corpus d'ouvrages sue les Etats Unis d'Amérique nous a permi de mieux comprendre les relations entre la France et l'Amérique entre le XVIII et le XXe siecle. (explications origines corpus) Ce corpus réalisé par la BNF mettait déja en évidence la grande diversité d'ouvrages et d'auteurs qui se sont penchés sur ce nouveau monde qu'était l'Amérique. Nous avons conservé en grande partie sa composition meme s'il était nécessaire de corriger certains passages et d'adapter les données au MCD.
+(Recap restructuration base de données)
