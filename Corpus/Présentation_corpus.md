@@ -8,7 +8,7 @@ qui associe la BNF avec d'autre bibli ou proposé une bibli assocé
 Et dans gallica ils précisent 
 
 ## Informations sur le corpus 
-Le corpus contient tant d'ouvrages. 
+Le corpus contient tant d'ouvrages. rrr
 
 Raison d'être ce corpus
 Nombre d'ouvrages
