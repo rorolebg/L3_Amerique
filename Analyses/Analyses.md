@@ -17,7 +17,8 @@ Nous avons décidé d'étudier la vision que les Français ont des États-Unis. 
 Nous avons créé une base de données afin de pouvoir analyser, grâce à des requêtes SQL, la matérialité des livres. 
 
 Nous avons calculé le nombre de pages moyen par ouvrages et par siècle grâce à la requête suivante : 
-`codeSELECT Siecle_edition, AVG(Nb_pages) AS "Nb de pages moyen" FROM EDITIONS WHERE Nb_pages IS NOT NULL GROUP BY Siecle_edition`
+`SELECT Siecle_edition, AVG(Nb_pages) AS "Nb de pages moyen" FROM EDITIONS WHERE Nb_pages IS NOT NULL GROUP BY Siecle_edition`
+
 Nous pouvons voir qu'il y a une moyenne de 320 pages par ouvrage au XVIIe siècle.
 Qu'il y a une moyenne de 224 pages par ouvrage au XVIIIe siècle.
 Qu'il y a une moyenne de 247 pages par ouvrage au XIXe siècle.
