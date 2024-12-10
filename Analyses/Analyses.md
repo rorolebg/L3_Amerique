@@ -41,7 +41,7 @@ Nous pouvons voir qu'il y a une diminution du nombre moyen de pages puis une aug
 
     Nous avons fait une analyse des fonctions des auteurs grâce à la requête suivante :
     
-    `SELECT Categorie_fonction, COUNT(*) FROM FONCTIONS  
+`SELECT Categorie_fonction, COUNT(*) FROM FONCTIONS  
 WHERE Categorie_principale = 1
 GROUP BY Categorie_fonction`
 
