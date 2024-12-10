@@ -49,6 +49,16 @@ Nous pouvons voir qu'il y a une diminution du nombre moyen de pages puis une aug
 
     Analyse des régions (via les sujets)
 
+Nombre d'ouvrages par région
+|Région|Nombre d'ouvrage|
+|---|---|
+|NULL|152|
+|Canada|44|
+|Est Etats-Unis|38|
+|Ouest Etats-Unis|37|
+|Louisiane|21|
+|Antilles ou Amérique latine|14|
+
 Evolution de l'intérêt pour certaines régions au fil des siecles 
 
 |Région |16|17|18|19|20|NULL|TOTAL|
