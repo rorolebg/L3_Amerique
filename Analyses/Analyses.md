@@ -11,13 +11,17 @@ plusieurs centaines de pages restent assez coûteux au XIXe siècle.
   
 
 ## Importance des Etats-Unis
-Nous avons décidé d'étudier la vision que les Français ont des États-Unis. Le lien entre ces deux pays est important. En effet, la France sous Louis XVI a aidé les insurgés dans leur lutte contre la Grande-Bretagne pour leur indépendance. La France est l'une des première à avoir reconnu l'indépendance des États-Unis. Quand Benjamin Franklin, l'un des Pères fondateurs est venu en France pour voir Louis XVI et s'allier avec le roi. Ce dernier a permis que l'on traduise en français, que l'on fasse imprimer et que l'on diffuse la déclaration d'indépendance de juillet 1776. IL est important de souligner que normalement la censure aurait interdit ce texte qui critique le régime monarchique. La déclaration a une grande influence en France. Elle inspire les révolutionnaires français comme par exemple Brissot qui est un fervent défenseur de la Révolution américaine. Les États-unis et la France gardent de bonnes relations, au fil des décennies et des siècles les États-Unis se développe et devienne une puissance importante qui rivalise avec les pays européens et qui fascine ces derniers. C'est pour cela que nous nous sommes intéressés à la vision que les Français avaient des États-Unis.
+Nous avons décidé d'étudier la vision que les Français ont des États-Unis. Le lien entre ces deux pays est important. En effet, la France sous Louis XVI a aidé les insurgés dans leur lutte contre la Grande-Bretagne pour leur indépendance. La France est l'une des première à avoir reconnu l'indépendance des États-Unis. Quand Benjamin Franklin, l'un des Pères fondateurs est venu en France pour voir Louis XVI et s'allier avec le roi. Ce dernier a permis que l'on traduise en français, que l'on fasse imprimer et que l'on diffuse la déclaration d'indépendance de juillet 1776. Il est important de souligner que normalement la censure aurait interdit ce texte qui critique le régime monarchique. La déclaration a une grande influence en France. Elle inspire les révolutionnaires français comme par exemple Brissot qui est un fervent défenseur de la Révolution américaine. Les États-unis et la France gardent de bonnes relations, au fil des décennies et des siècles les États-Unis se développe et devienne une puissance importante qui rivalise avec les pays européens et qui fascine ces derniers. C'est pour cela que nous nous sommes intéressés à la vision que les Français avaient des États-Unis.
 
 
-    Analyses sur la matérialité des livres
+Nous avons créé une base de données afin de pouvoir analyser, grâce à des requêtes SQL, la matérialité des livres. 
 
-    Nb de pages
-
+Nous avons calculé le nombre de pages moyen par ouvrages et par siècle grâce à la requête suivante : 
+SELECT Siecle_edition, AVG(Nb_pages) AS "Nb de pages moyen" FROM EDITIONS WHERE Nb_pages IS NOT NULL GROUP BY Siecle_edition
+Nous pouvons voir qu'il y a une moyenne de 320 pages par ouvrage au XVIIe siècle.
+Qu'il y a une moyenne de 224 pages par ouvrage au XVIIIe siècle.
+Qu'il y a une moyenne de 247 pages par ouvrage au XIXe siècle.
+Enfin, qu'il y a une moyenne de 293 pages par ouvrage au XXe siècle. 
     Présence d'illustrations
 
     Analyse des auteurs
