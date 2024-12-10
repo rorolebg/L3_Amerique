@@ -48,15 +48,16 @@ Nous pouvons voir qu'il y a une diminution du nombre moyen de pages puis une aug
     Focus sur les ouvrages parlant des Etats-Unis au XIXe
 
     Analyse des régions (via les sujets)
-    Evolution de l'intérêt pour certaines régions au fil des siecles 
 
-    |Région |16|17|18|19|20|NULL|TOTAL|
-    |----|----|----|----|----|----|----|----|
-    |Antilles ou Amérique Latine| |18,18%|17,07%|1,43%| | |4,59%|
-    |Canada| |45,45%|7,32%|14,29%|4,35%| |14,43%|
-    |Est Etats-Unis|100%| |26,83%|11,90%| |12,50%|12,46%|
-    |Louisiane| |4,55%|19,51%|4,29%|13,04%| |6,89%|
-    |NULL| |31,82%|29,27%|53,33%|60,87%|75%|49,51%|
-    |Ouest Etats-Unis| | | |14,76%|21,74%|12,50%|12,13%|
-    |TOTAL|100%|100%|100%|100%|100%|100%|100%|
+Evolution de l'intérêt pour certaines régions au fil des siecles 
+
+|Région |16|17|18|19|20|NULL|TOTAL|
+|----|----|----|----|----|----|----|----|
+|Antilles ou Amérique Latine|0 |18,18%|17,07%|1,43%| 0| 0|4,59%|
+|Canada| 0|45,45%|7,32%|14,29%|4,35%|0 |14,43%|
+|Est Etats-Unis|100%|0 |26,83%|11,90%|0 |12,50%|12,46%|
+|Louisiane| 0|4,55%|19,51%|4,29%|13,04%|0 |6,89%|
+|NULL|0 |31,82%|29,27%|53,33%|60,87%|75%|49,51%|
+|Ouest Etats-Unis| 0| 0|0 |14,76%|21,74%|12,50%|12,13%|
+|TOTAL|100%|100%|100%|100%|100%|100%|100%|
     
