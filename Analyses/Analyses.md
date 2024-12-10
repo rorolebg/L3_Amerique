@@ -27,10 +27,10 @@ Nous avons calculé le nombre de pages moyen par ouvrages et par siècle grâce 
 
 | Siècle | Nombres moyen de pages |
 | ---------- | -------------|
-| XVII^e^ |320|
-|XVIII^e^|224|
-|XIX^e^|247|
-|XX^e^|293|
+| XVIIe |320|
+|XVIIIe|224|
+|XIXe|247|
+|XXe|293|
 
 
 Nous pouvons voir qu'il y a une diminution du nombre moyen de pages puis une augmentation. Nous pouvons interprêter cela de plusieurs manières : premièrement nous l'avons vu il y a une amélioration de l'alphabétisation de la population, les plus pauvres ne pouvaient se procurer que des livres avec peu de pages. Deuxièmement, l'augmentation du nombre de pages au XXe siècle s'explique par le fait que les États-Unis est une puissance importante qui continue de fasciner les Européens et surtout les Français. Ce ne sont que des suppositions, nous ne pouvons pas connaître les causes de ces évolutions.
