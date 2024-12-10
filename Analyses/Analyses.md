@@ -57,9 +57,11 @@ GROUP BY Categorie_fonction`
 |Scientifique|32|
 |Voyageur|11|
 
+Nous pouvons souligner que les auteurs sont exclusivement masculins. Il est compliqué d'expliquer cela en quelques mots, évoquons simplement qu'il était plus difficile pour les femmes de pouvoir publier leurs travaux.Ce sont essentiellement des hommes qui se sont rendus aux États-Unis. Dans le tableau si dessus nous pouvons voir que les fonctions exerçaient sont masculinisées. Il faut néanmoins évoquer le fait qu'il y a des femmes qui exercent ces métiers.  
+
     Evolution des fonctions
 
-    Auteurs presque exclusivement masculins
+    
 
     Focus sur les ouvrages parlant des Etats-Unis au XIXe
 
