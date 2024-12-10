@@ -39,11 +39,29 @@ Nous pouvons voir qu'il y a une diminution du nombre moyen de pages puis une aug
 
     Présence d'illustrations
 
-    Analyse des auteurs
+    Nous avons fait une analyse des fonctions des auteurs grâce à la requête suivante :
+    
+`SELECT Categorie_fonction, COUNT(*) FROM FONCTIONS  
+WHERE Categorie_principale = 1
+GROUP BY Categorie_fonction`
+
+| Fonction | Nombre d'auteurs qui l'exerce|
+| ---------- | -------------|
+| Artistes |10|
+|Homme d'affaires|7|
+|Hommes de lettres|57|
+|Juriste|11|
+|Militaire|22|
+|Politique ou administrateur|15|
+|Religieux|31|
+|Scientifique|32|
+|Voyageur|11|
+
+Nous pouvons souligner que les auteurs sont exclusivement masculins. Il est compliqué d'expliquer cela en quelques mots, évoquons simplement qu'il était plus difficile pour les femmes de pouvoir publier leurs travaux.Ce sont essentiellement des hommes qui se sont rendus aux États-Unis. Dans le tableau si dessus nous pouvons voir que les fonctions exerçaient sont masculinisées. Il faut néanmoins évoquer le fait qu'il y a des femmes qui exercent ces métiers.  
 
     Evolution des fonctions
 
-    Auteurs presque exclusivement masculins
+    
 
     Focus sur les ouvrages parlant des Etats-Unis au XIXe
 
