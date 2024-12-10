@@ -16,13 +16,27 @@ Nous avons décidé d'étudier la vision que les Français ont des États-Unis. 
 
 Nous avons créé une base de données afin de pouvoir analyser, grâce à des requêtes SQL, la matérialité des livres. 
 
+Nous avons calculé le nombre de pages moyen des livres écrits entre le XVIIe et le XXe siècle grâce à la requête suivante :
+`SELECT AVG(Nb_pages) AS "Nb de pages moyen" FROM EDITIONS WHERE Nb_pages IS NOT NULL`
+
+Nous pouvons voir que le nombre moyen de pages est de 251 pages en moyenne. Un livre de 251 pages est relativement important pour cette période. Cela nous montre l'importance des États-Unis pour les Français.
+
 Nous avons calculé le nombre de pages moyen par ouvrages et par siècle grâce à la requête suivante : 
+
 `SELECT Siecle_edition, AVG(Nb_pages) AS "Nb de pages moyen" FROM EDITIONS WHERE Nb_pages IS NOT NULL GROUP BY Siecle_edition`
 
-Nous pouvons voir qu'il y a une moyenne de 320 pages par ouvrage au XVIIe siècle.
-Qu'il y a une moyenne de 224 pages par ouvrage au XVIIIe siècle.
-Qu'il y a une moyenne de 247 pages par ouvrage au XIXe siècle.
-Enfin, qu'il y a une moyenne de 293 pages par ouvrage au XXe siècle. 
+| Siècle | Nombres moyen de pages |
+| ---------- | -------------|
+| XVII^e^ |320|
+|XVIII^e^|224|
+|XIX^e^|247|
+|XX^e^|293|
+
+
+Nous pouvons voir qu'il y a une diminution du nombre moyen de pages puis une augmentation. Nous pouvons interprêter cela de plusieurs manières : premièrement nous l'avons vu il y a une amélioration de l'alphabétisation de la population, les plus pauvres ne pouvaient se procurer que des livres avec peu de pages. Deuxièmement, l'augmentation du nombre de pages au XXe siècle s'explique par le fait que les États-Unis est une puissance importante qui continue de fasciner les Européens et surtout les Français. Ce ne sont que des suppositions, nous ne pouvons pas connaître les causes de ces évolutions.
+
+
+
     Présence d'illustrations
 
     Analyse des auteurs
