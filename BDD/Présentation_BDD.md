@@ -18,7 +18,8 @@ Notre base de données relationnelle se structure, comme toutes les bases, d'un 
 ## Le modèle conceptuel des données (MCD) de notre corpus
 
 **<ins>Schéma du MCD d'apès le corpus Amérique du catalogue de la BnF : </ins>**
-![MCD_Corpus_Amérique](https://github.com/user-attachments/assets/9480eb4f-377d-4c63-b89c-f94cfed6cb01)
+![MCD_Corpus_Amérique](https://github.com/user-attachments/assets/15ffb8cd-2d3a-4058-96bf-1fa9dfaf1b9e)
+
 
 Le MCD est l'étape préalable à la conception d'une base de données. En effet, celui-ci nous a permis, dans le cadre de ce projet, de modéliser les données du corpus au sein d'une structure organisée qui indique différents éléments :
 - Les **entités** : la chose que l'on décrit ;
@@ -69,8 +70,27 @@ Le dictionnaire des données est un référentiel d'informations relatif aux bas
 
 ## Recodage des données 
 
-**<ins>Siècles des éditions :</ins>**
+**<ins>Siècle des éditions :</ins>**
+
+Nous avons ajouté, à l'aide de requêtes SQL (Structured Query Language), une colonne "Siècle_edition" dans la table *EDITIONS* de notre base de données afin de préciser le siècle - la date n'étant pas souvent claire - d'édition de l'ouvrage. Ainsi, ces requêtes nous aide clairement à identifier quel siècle à été le plus prolifique, en effet, le XIXe siècle ressort le plus souvent. 
+
+| Siècle | Requête SQL |
+| ----------- | ----------- |
+| XVIe siècle  |  `UPDATE "Editions" SET "Siecle_edition"=16 WHERE("Date_edition_inf"+"Date_edition_sup")/2 BETWEEN 1500 and 1599` |
+| XVIIe siècle  | `UPDATE "Editions" SET "Siecle_edition"=17 WHERE("Date_edition_inf"+"Date_edition_sup")/2 BETWEEN 1600 and 1699` |
+| XVIIIe siècle  | `UPDATE "Editions" SET "Siecle_edition"=18 WHERE("Date_edition_inf"+"Date_edition_sup")/2 BETWEEN 1700 and 1799` |
+| XIXe siècle  | `UPDATE "Editions" SET "Siecle_edition"=19 WHERE("Date_edition_inf"+"Date_edition_sup")/2 BETWEEN 1800 and 1899`|
+| XXe siècle  | `UPDATE "Editions" SET "Siecle_edition"=20 WHERE("Date_edition_inf"+"Date_edition_sup")/2 BETWEEN 1900 and 1999`|
 
 **<ins>Régions couvertes par les ouvrages :</ins>**
 
+Avec l'utilisation du logiciel de textométrie TXM, nous avons pu situer les principales zones géographiques couvertes par les ouvrages du corpus. 
+
+
 **<ins>Fonctions/métiers des auteurs :</ins>**
+
+Dans la table *FONCTIONS*, chaque auteur est identifié par un "ID_fonction" unique (clé primaire). On connaît également, à travers ses attributs, l'intulé de la fonction, la catégorie de cette fonction ou encore le lieu de son exercice. Cette table est rattachée à la table *AUTEURS* par la clé étrangère "Ref_auteur" ce qui nous permet d'avoir des informations sur l'auteur, autrement dit, celui qui exerce la focntion. 
+
+Bien souvent certains auteurs possèdent plusieurs fonctions. Nous avons donc décidé, dans la table *FONCTIONS*, de distinguer la fonction principale de chaque auteur à l'aide de valeurs booléennes. 
+
+
