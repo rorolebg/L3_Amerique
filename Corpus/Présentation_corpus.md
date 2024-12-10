@@ -10,10 +10,19 @@ Cette collaboration avec la Bibliothèque du Congrès s’inscrit dans une colla
 Le corpus contient 309 ouvrages issu des 3 siècles relaté.  
 
 ### Source des données
-Ces données ont été récoltés via le catalogue en ligne de France-Amérique avec les notices d’ouvrages de ce corpus. Nous avons ensuite, via les notices d’ouvrage chercher les notices d’auteurs ainsi que les sujets rameaux qui était associés à ces notices d’ouvrages. Nous avons récupéré tous les identifiants “Ark” (à préciser que qu’avec cette méthode seul les ouvrages manuscrits du catalogue n’ont pas pu être analyser de cette manière).  
+Ces données ont été récoltés via le catalogue générale ligne de la BNF via les notices d’ouvrages de ce corpus. Nous avons ensuite, via les notices d’ouvrage chercher les notices d’auteurs ainsi que les sujets rameaux qui était associés à ces notices d’ouvrages. Nous avons récupéré tous les identifiants “Ark” (à préciser que qu’avec cette méthode seul les ouvrages manuscrits du catalogue n’ont pas pu être analyser de cette manière).   
 
 
-Données récupérées par webscrapping
-Travail d'analyse du code source des notices pour localiser les informatiosn récupérées
+### Données récupérées par webscrapping
+Une fois ces données récupérer nous avons travaillé sur le code source HTML des pages des notices bibliographiques, de personne, de sujet rameaux.  
+
+1. Nous avons commencé par les “Notices bibliographiques” où nous avons extrait le format, les liens vers les notices personnes et notices rameaux. 
+
+2. Puis sur le code sources des pages “Notices personnes” où nous avons extrait les identifiants “Ark”. Ainsi que leur nom, prénom, nationalité, sexe, langue, lieu de naissance et de mort ainsi que les dates qui leurs sont associé (quand celles-ci étaient spécifier), enfin les fonctions recenser et les dates auxquelles ils ont exercé ces fonctions.  
+
+3. Nous avons fini par extraire des “Notices rameaux”, le numéro de la notice, son intitulé, les catégories qui lui sont associés (ce sont de grands thèmes généraux), et les thèmes spécifiques (qui sont plus spécifique, ciblés).  
+
+
 Récupération faite avec un script Python (O. Julien)
+
 Récupération des textes océrisés
